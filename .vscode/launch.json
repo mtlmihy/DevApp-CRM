@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Connecteur CRM (ConsoleApp1)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll",
+      "cwd": "${workspaceFolder}/ConsoleApp1",
+      "console": "integratedTerminal"
+    }
+  ]
+}
