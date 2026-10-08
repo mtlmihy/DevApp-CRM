@@ -17,6 +17,8 @@ Le projet est réalisé en **3 sprints**. Ce dépôt couvre en priorité le **Sp
 | Authentification | OAuth, fenêtre de login Microsoft (`LoginPrompt=Auto`) |
 | Dépôt Git | `https://github.com/mtlmihy/DevApp-CRM.git` (branche `main`) |
 | Backlog | `US Power Pages 1.xlsx` (dossier DevProgiciel), onglet « Planning Sprints » |
+| Site Power Pages | « NameraKorp » — `https://namerakorp-<suffixe>.powerappsportals.com` (à compléter) |
+| WEBSITE_ID | `<à compléter après pac pages list>` |
 
 ## 3. Prérequis à installer
 
@@ -113,3 +115,19 @@ DevApp-CRM/
 - Branche `main` = état stable ; une branche par US (`us/<numero>-<nom-court>`).
 - Messages de commit en français, préfixés par l'US (ex. `US5: liste des produits`).
 - Ne pas commiter `bin/`, `obj/`, `.vs/` (déjà dans `.gitignore`).
+- Ne pas commiter `.portalconfig/` (manifestes `pac` propres à un environnement, voir `.gitignore`).
+
+## 10. Direction artistique
+
+Ambiance **bleu ciel**, déclinée en nuances de bleu. Palette à saisir dans le studio Power Pages (*Styles* → thème personnalisé) :
+
+| Rôle | Couleur | Usage |
+|---|---|---|
+| Bleu ciel | `#38BDF8` | Accents, bandeaux, illustrations |
+| Bleu ciel très clair | `#E0F2FE` | Fonds de section alternés |
+| Bleu soutenu | `#0369A1` | Boutons et liens (texte blanc lisible dessus) |
+| Bleu nuit | `#0C4A6E` | Titres, en-tête, pied de page |
+| Fond | `#FFFFFF` | Fond de page |
+| Texte | `#0F172A` | Texte courant |
+
+> Le bleu ciel `#38BDF8` est trop clair pour porter du texte blanc : on le garde pour les aplats et les accents, et on utilise `#0369A1` pour les boutons.

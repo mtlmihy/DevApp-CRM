@@ -3,3 +3,6 @@ obj/
 .vs/
 *.user
 *.suo
+
+# Power Pages (pac) : manifestes propres à chaque environnement / poste
+.portalconfig/

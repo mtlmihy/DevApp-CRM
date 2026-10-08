@@ -8,6 +8,42 @@
       "args": ["build", "${workspaceFolder}/ConsoleApp1/ConsoleApp1.csproj"],
       "problemMatcher": "$msCompile",
       "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "pages: download",
+      "command": "pac",
+      "type": "process",
+      "args": [
+        "pages", "download",
+        "--path", "${workspaceFolder}/site",
+        "--webSiteId", "${input:websiteId}",
+        "--modelVersion", "2",
+        "--overwrite"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "pages: upload",
+      "command": "pac",
+      "type": "process",
+      "args": [
+        "pages", "upload",
+        "--path", "${workspaceFolder}/site/${input:siteFolder}",
+        "--modelVersion", "2"
+      ],
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "websiteId",
+      "type": "promptString",
+      "description": "WEBSITE_ID du site Power Pages (voir pac pages list ou CONTEXTE_PROJET.md)"
+    },
+    {
+      "id": "siteFolder",
+      "type": "promptString",
+      "description": "Dossier du site sous ./site (créé par pages: download)"
     }
   ]
 }
