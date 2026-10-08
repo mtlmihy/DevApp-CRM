@@ -12,7 +12,7 @@ Le projet est réalisé en **3 sprints**. Ce dépôt couvre en priorité le **Sp
 
 | Élément | Valeur |
 |---|---|
-| URL du CRM (Dataverse) | `https://org9b2b3736.crm12.dynamics.com` (à vérifier / adapter) |
+| URL du CRM (Dataverse) | `https://butinfoleonimathyssandbox.crm12.dynamics.com` (sandbox Centre des ventes) |
 | AppId OAuth utilisé par le connecteur | `51f81489-12ee-4a9e-aaae-a2591f45987d` (app publique Microsoft pour les exemples SDK) |
 | Authentification | OAuth, fenêtre de login Microsoft (`LoginPrompt=Auto`) |
 | Dépôt Git | `https://github.com/mtlmihy/DevApp-CRM.git` (branche `main`) |
@@ -47,7 +47,7 @@ Pour connecter la CLI Power Platform et récupérer le site Power Pages :
 
 ```bash
 # Se connecter à l'environnement
-pac auth create --environment https://org9b2b3736.crm12.dynamics.com
+pac auth create --environment https://butinfoleonimathyssandbox.crm12.dynamics.com
 
 # Lister les sites Power Pages de l'environnement
 pac pages list
@@ -104,7 +104,7 @@ DevApp-CRM/
 ## 8. Points ouverts / décisions
 
 - **Bandeau cookies** : planifié en Sprint 3 (BV = 0), mais il est en priorité 1 et il est en général obligatoire légalement avant une mise en ligne publique. S'il y a une mise en ligne avant le Sprint 3, l'échanger avec le footer (même effort).
-- **URL de l'environnement** : confirmer qu'il s'agit bien de l'environnement de dev cible.
+- **URL de l'environnement** : sandbox `butinfoleonimathyssandbox` (Centre des ventes) confirmée.
 - **AppId** : c'est l'app publique Microsoft des exemples SDK. Pour la production, prévoir une inscription d'application Entra ID dédiée.
 - **Secrets** : ne jamais commiter de mot de passe ni de client secret. Utiliser `dotnet user-secrets` ou des variables d'environnement.
 

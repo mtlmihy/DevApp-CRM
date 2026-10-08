@@ -10,7 +10,7 @@ namespace DataverseLoginPasswordSample
         {
             var connStr =
                 $"AuthType=OAuth;" +
-                $"Url=https://org9b2b3736.crm12.dynamics.com;" + // <---- Il n'y a que l'url à changer
+                $"Url=https://butinfoleonimathyssandbox.crm12.dynamics.com;" + // <---- Il n'y a que l'url à changer
                 $"AppId=51f81489-12ee-4a9e-aaae-a2591f45987d;" +
                 $"RedirectUri=http://localhost;" +
                 $"LoginPrompt=Auto;";
